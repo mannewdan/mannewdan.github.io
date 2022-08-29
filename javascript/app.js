@@ -60,7 +60,8 @@ function saveData() {
   localStorage.setItem("movies", JSON.stringify(savedMovies));
 }
 function loadData() {
-  savedMovies = JSON.parse(localStorage.getItem("movies"));
+  const loadedData = JSON.parse(localStorage.getItem("movies"));
+  if (Array.isArray(loadedData)) savedMovies = loadedData;
 }
 function arrayContainsMovie(array, movie) {
   for (let i = 0; i < array.length; i++) {
