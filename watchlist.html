@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Movie Watchlist</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-body">
+    <header>
+      <div class="container-header">
+        <h1>My Watchlist</h1>
+        <a href="index.html">Search for movies</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="empty-content">
+        <img src="images/icon-film.png" alt="">
+        <p>There's nothing in your Watchlist yet :)</p>
+      </div>
+
+      <div id="error-message">
+        <p>Unable to find what you were searching for. Please try another search.</p>
+      </div>
+
+      <div id="movie-list">
+        <div class="movie-container">
+          <div class="movie-content">
+            <div class="movie-title-container">
+              <h3 class="movie-title">Blade Runner</h3>
+              <img src="images/icon-star.png">
+              <p class="movie-rating">8.1</p>
+            </div>
+            <div class="movie-info-container">
+              <p class="movie-runtime"> 117 min</p>
+              <p class="movie-genre">Action, Drama, Sci-fi</p>
+              <div class="add-to-watchlist">
+                <img src="images/icon-plus.png">
+                <p>Watchlist</p>
+              </div>
+            </div>
+            <p class="movie-description">A blade runner must pursue and terminate four replicants who stole a ship in
+              space, and have returned to Earth to find
+              their creator.</p>
+          </div>
+          <img class="movie-poster" src="images/header-bg.avif">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="javascript/app.js" type="module"></script>
+</body>
+
+</html>
